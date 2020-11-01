@@ -22,6 +22,10 @@ p {
     color: #000;
 }
 
+a {
+    color: #ffff66;
+}
+
 /* Main */
 #main {
     display: flex;
@@ -46,14 +50,20 @@ p {
 
 /* Tempotito */
 .tempotito {
-    height: 70vh;
+    height: 50vh;
 }
+.tempotito {
+    fill: #ffff66;
+}
+.tempotito.dancing {
+    transform: scaleX(-1);
+}
+
+@media screen and (min-width: 767px) {
     .tempotito {
-        fill: #ffff66;
+        height: 70vh;
     }
-    .tempotito.dancing {
-        transform: scaleX(-1);
-    }
+}
 
 /* Info wrapper */
 .info-wrapper {
