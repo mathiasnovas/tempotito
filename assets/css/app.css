@@ -97,6 +97,9 @@ a {
     margin-top: auto;
     text-align: center;
 }
+    .main-footer .small {
+        margin-top: .25rem;
+    }
 
 /* Keyboard button */
 .keyboard-button {
