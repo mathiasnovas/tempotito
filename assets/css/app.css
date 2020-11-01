@@ -28,6 +28,11 @@ a {
     color: #ffff66;
 }
 
+.small {
+    font-size: .8rem;
+    opacity: .75;
+}
+
 /* Main */
 #main {
     display: flex;
