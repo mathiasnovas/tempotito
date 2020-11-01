@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 html, body {
@@ -51,8 +52,6 @@ a {
 /* Tempotito */
 .tempotito {
     height: 50vh;
-}
-.tempotito {
     fill: #ffff66;
 }
 .tempotito.dancing {
@@ -61,7 +60,7 @@ a {
 
 @media screen and (min-width: 767px) {
     .tempotito {
-        height: 70vh;
+        height: auto;
     }
 }
 
