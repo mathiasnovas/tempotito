@@ -7,6 +7,7 @@ jQuery(function ($) {
         doc = $(document),
         count = 0,
         canvas = $('#bpm span'),
+        tempotito = $('.tempotito'),
         danceIntervalFunc = null;
 
     /**
@@ -116,7 +117,8 @@ jQuery(function ($) {
             }, 100);
         });
 
-        const tempotito = $('.tempotito')
+        // Make Tempotito dance!
+        tempotito.toggleClass('dancing')
 
         clearInterval(danceIntervalFunc)
 
@@ -124,10 +126,10 @@ jQuery(function ($) {
 
         if (danceInterval !== Infinity) {
             danceIntervalFunc = setInterval(function () {
-                tempotito.addClass('dancing')
+                tempotito.toggleClass('dancing')
 
                 setTimeout(function () {
-                    tempotito.removeClass('dancing')
+                    tempotito.toggleClass('dancing')
                 }, (danceInterval / 2))
             }, danceInterval)
         }
