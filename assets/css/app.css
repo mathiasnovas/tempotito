@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #336699;
+    user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffff66;
+}
+
+p {
+    margin: 0;
+    color: #000;
+}
+
+/* Main */
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Header */
+.main-header {
+    padding: 0.25rem;
+    text-align: center;
+}
+
+/* Tempotito wrapper */
+.tempotito-wrapper {
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Tempotito */
+.tempotito {
+    height: 70vh;
+}
+    .tempotito {
+        fill: #ffff66;
+    }
+    .tempotito.dancing {
+        transform: scaleX(-1);
+    }
+
+/* Info wrapper */
+.info-wrapper {
+    margin-top: 2rem;
+    flex: 0 0 100%;
+}
+
+/* BPM */
+.bpm {
+    text-align: center;
+}
+    .bpm p {
+        color: #ffff66;
+        font-size: 42px;
+    }
+
+@media screen and (min-width: 767px) {
+    .bpm p {
+        font-size: 64px;
+    }
+}
+
+/* Footer */
+.main-footer {
+    padding: 0.25rem;
+    margin-top: auto;
+    text-align: center;
+}
+
+/* Keyboard button */
+.keyboard-button {
+    display: inline-flex;
+    align-self: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    color: #ffff66;
+    border: 2px solid #ffff66;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 #ffff66;
+}
