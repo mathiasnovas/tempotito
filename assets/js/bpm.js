@@ -122,17 +122,14 @@ jQuery(function ($) {
 
         clearInterval(danceIntervalFunc)
 
-        let danceInterval = (60000 / bpm) * 2;
+        let danceInterval = (60000 / bpm);
 
         if (danceInterval !== Infinity) {
             danceIntervalFunc = setInterval(function () {
                 tempotito.toggleClass('dancing')
-
-                setTimeout(function () {
-                    tempotito.toggleClass('dancing')
-                }, (danceInterval / 2))
-            }, danceInterval)
+            }, (danceInterval))
         }
+
 
         // Display the BPM
         canvas.html(bpm);
